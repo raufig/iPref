@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menuResta</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/menuResta.css">
+    <script src="https://kit.fontawesome.com/7b4acc7d6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="container-fluid">
+
+
+    
+    <div class="row">
+        <div class="col-4 col-lg-2 py-2 cont-texto text-center">
+            <p class="mt-3">Crepes and wafles</p>
+        </div>
+
+        <div class="col-8 col-lg-10 py-2  cont-logo">
+            <img class="logo" src="../images/logoletras.png" alt="logo-ipref">
+        </div>
+    </div>
+</header>
+
+<section class="container-fluid">
+
+    <div class="row  text-center ">
+        <aside class="col-4 col-lg-2  p-0 d-flex flex-column text-center align-items-center">
+            <img src="../images/crepes.png" alt="imagen-crepes">
+            <a href='../pages/dashboard.html'><span><i class="fas fa-home"></i></span>Home</a>
+                <a href='../pages/profile.html'><span><i class="fas fa-user"></i></span>Perfil</a>
+                <a href='../pages/menuResta.html'><span><i class="fas fa-utensils"></i></span>Menu</a>
+        </aside>
+        <main class="col-8 col-lg-10 ">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-CREPES-tab" data-toggle="tab" href="#nav-CREPES" role="tab" aria-controls="nav-CREPES" aria-selected="true">CREPES</a>
+                  <a class="nav-item nav-link" id="nav-SOPAS-tab" data-toggle="tab" href="#nav-SOPAS" role="tab" aria-controls="nav-SOPAS" aria-selected="false">SOPAS</a>
+                  <a class="nav-item nav-link" id="nav-PITAS-tab" data-toggle="tab" href="#nav-PITAS" role="tab" aria-controls="nav-PITAS" aria-selected="false">PITAS</a>
+                  <a class="nav-item nav-link" id="nav-ENSALADAS-tab" data-toggle="tab" href="#nav-ENSALADAS" role="tab" aria-controls="nav-ENSALADAS" aria-selected="false">ENSALADAS</a>
+                  <a class="nav-item nav-link" id="nav-SALUDABLES-tab" data-toggle="tab" href="#nav-SALUDABLES" role="tab" aria-controls="nav-SALUDABLES" aria-selected="false">SALUDABLES</a>
+                  <a class="nav-item nav-link" id="nav-BEBIDAS-tab" data-toggle="tab" href="#nav-BEBIDAS" role="tab" aria-controls="nav-BEBIDAS" aria-selected="false">BEBIDAS</a>
+                  <a class="nav-item nav-link" id="nav-POSTRES-tab" data-toggle="tab" href="#nav-POSTRES" role="tab" aria-controls="nav-POSTRES" aria-selected="false">POSTRES</a>
+                  <a class="nav-item nav-link" id="nav-ESPECIALES-tab" data-toggle="tab" href="#nav-ESPECIALES" role="tab" aria-controls="nav-ESPECIALES" aria-selected="false">ESPECIALES</a>
+                  
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-CREPES" role="tabpanel" aria-labelledby="nav-CREPES-tab">
+                    <object  data="Menu/cardCrepes.html" type="text/html"></object> 
+                </div>
+                <div class="tab-pane fade" id="nav-SOPAS" role="tabpanel" aria-labelledby="nav-SOPAS-tab">
+                    <object  data="Menu/cardSopas.html" type="text/html"></object> 
+                </div>
+                <div class="tab-pane fade" id="nav-PITAS" role="tabpanel" aria-labelledby="nav-PITAS-tab">PITAS</div>
+                <div class="tab-pane fade" id="nav-ENSALADAS" role="tabpanel" aria-labelledby="nav-ENSALADAS-tab">ENSALADAS</div>
+                <div class="tab-pane fade" id="nav-SALUDABLES" role="tabpanel" aria-labelledby="nav-SALUDABLES-tab">SALUDABLES</div>
+                <div class="tab-pane fade" id="nav-BEBIDAS" role="tabpanel" aria-labelledby="nav-BEBIDAS-tab">BEBIDAS</div>
+                <div class="tab-pane fade" id="nav-POSTRES" role="tabpanel" aria-labelledby="nav-POSTRES-tab">POSTRES</div>
+                <div class="tab-pane fade" id="nav-ESPECIALES" role="tabpanel" aria-labelledby="nav-ESPECIALES-tab">ESPECIALES</div>
+              </div>
+        </main>
+</div>
+</section>
+
+    
+      
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="../js/menuResta.js"></script>
+</body>
+
+</html>

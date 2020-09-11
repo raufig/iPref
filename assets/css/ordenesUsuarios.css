@@ -1,0 +1,169 @@
+:root {
+    /*Letras*/
+    --claro: #ffffff;
+    /*Color Registro transparente - tomado del claro*/
+    --transparente: #d1d1b477;
+    /* Color fondo de pedidos */
+    --ColorPedidos: #81817e;
+    /* Transparencia de los inputs*/
+    --inputBackColor: #d1d1b4c4;
+    /* Fondo */
+    --oscuro: #76bd1d;
+    /* Logo */
+    --primario: #f3cc30;
+    /* Botones */
+    --secundario: #f3cc30;
+    /*Fondo del menú y barra lateral*/
+    --fondoNegro: #171426;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+.imgIpref {
+    background-color: var(--oscuro);
+    width: 80px;
+
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+
+    grid-template-areas:
+        'rest logoIpref'
+        'menuLateral contenidoLateral'
+    ;
+
+    height: 100vh;
+
+}
+
+
+.grid-rest {
+    grid-area: rest;
+    background-color: var(--fondoNegro);
+    color: var(--claro);
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    border-bottom: solid 1px var(--claro);
+}
+
+.grid-logoIpref {
+    grid-area: logoIpref;
+    background-color: var(--oscuro);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: solid 1px var(--claro);
+
+
+}
+
+
+
+.grid-menuLateral {
+    grid-area: menuLateral;
+    background-color: var(--fondoNegro);
+    color: var(--claro);
+    text-align: center;
+
+}
+
+
+aside ul {
+    position: sticky;
+    top: 0px;
+    margin: 5px auto;
+}
+
+ul>li {
+    list-style-type: none;
+    margin: 10px auto;
+
+}
+
+ul>li>a {
+    text-decoration: none;
+    color: var(--claro);
+}
+
+.grid-contenido-lateral {
+    grid-area: contenidoLateral;
+    background-color: var(--inputBackColor);
+
+}
+
+.grid-pedidos-usuario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    justify-items: center;
+    align-items: center;
+    /* border: solid; */
+    padding: 10px;
+}
+
+.pedido {
+    padding: 20px;
+    /* border: solid 1px; */
+    background-color: var(--ColorPedidos);
+    border-radius: 10px;
+    color: var(--claro);
+}
+
+@media only screen and (max-width:550px) {
+    .grid-layout {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+            'rest logoIpref'
+            'menuLateral menuLateral'
+            'contenidoLateral contenidoLateral'
+        ;
+
+    }
+
+    .grid-pedidos-usuario {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        justify-items: center;
+        align-items: center;
+        /* border: solid; */
+        padding: 30px;
+    }
+
+    aside ul {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    aside {
+        position: sticky;
+        top: 0px;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .grid-pedidos-usuario {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        justify-items: center;
+        align-items: center;
+        /* border: solid; */
+        padding: 30px;
+    }
+}

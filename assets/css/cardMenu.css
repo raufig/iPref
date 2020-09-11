@@ -1,0 +1,42 @@
+body{
+    background-color: rgba(0, 0, 0, 0);
+    
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.imgCards{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-image: url(../images/creps&waffles/crepPollo001.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.imgCardsSoup{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-image: url(../images/creps&waffles/sopaDeCebollaGratinada.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cardContainer{
+    margin: 10px 0 ;
+    width: auto;
+    height: 200px;
+
+    
+}
+/* .card-img-top{
+    width: 120%;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.993);
+    
+} */
+
+.card-body{
+    background: #76BD1D;
+    color: white;
+}

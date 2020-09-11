@@ -1,0 +1,51 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+
+
+/* MAIN */
+
+/* .parent {
+    background-color: #D1D1B4;
+} */
+
+.client {
+    background-color: #17142645;
+    border-radius: 15px;
+    /* padding: 20px; */
+    /* height: 150px; */
+    -webkit-box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.62);
+    -moz-box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.62);
+    box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.62);
+    
+}
+
+.client .pedido{
+    height: 80px;
+    border-bottom:2px solid #fff;
+}
+.client .pedido .tiempo{
+    color: #F23030;
+    font-size: large;
+    font-weight: bold
+}
+
+.tamanoaside {
+    height: 100vh;
+}
+ .cont-pedidos{
+    padding: 20px;
+} 
+.cont-pedidos2{
+    padding: 0px 20px 0 20px;
+} 
+
+/* @media(max-width:576px){
+    .fa-home{
+        display: none;
+    }
+} */

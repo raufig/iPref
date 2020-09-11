@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+ body{background:#d1d1b4;font-family: 'Roboto';} 
+/* ----------------------------------------HEADER-------------------------------------- */
+header .cont-logo{
+    text-align: end;
+    border-left:none;
+    padding-right:50px;
+    background: #76bd1d;
+ }
+header .logo{
+    width:100px;
+    margin-top: 16px;
+    position: relative;
+    margin-left: auto;
+}
+header .cont-texto, .cont-logo{
+    border:2px solid grey
+}
+header .cont-texto{background: #171426;}
+header .cont-texto> p{
+    font-size:20px;
+    font-weight:700;
+    color:#fff;
+    font-family: cursive;
+}
+
+/* ----------------------------------------------------MAIN---------------------------------- */
+
+/* ----------------------------ASIDE------------------------ */
+aside{border:2px solid grey;border-top:none;background: #171426;}
+aside img{width:180px;margin-bottom:10px;text-align: center;}
+aside a{
+    width:100%;
+    margin:0;
+    font-size:26px;
+    color:#fff;
+    cursor:pointer;
+    padding:8px 0;
+    transition:all .1s; 
+     
+}
+aside a:hover{
+    background:#d1d1b4;
+    color:#171426;
+    text-decoration: none;
+}
+
+aside span{margin-right: 16px;}
+.fas{font-size:38px;}
+
+/* ----------------------------SECTION-MAIN------------------------*/
+
+.nav-tabs{
+    background: #807f77;
+}
+.nav-item {
+    color: white;
+}
+
+.tab-content{
+    background: #171426c7;
+    padding: 15px;
+}
+
+
+object {
+    width: 90%;
+     height: 800px;
+}
+
+.dataDash{
+    background: #807f77;
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.62);
+    -moz-box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.62);
+    box-shadow: 10px 10px 28px -1px rgba(0,0,0,0.62);
+}
+
+.dataDash i {
+    color: white;
+}
+
+.blockquoteEdit{
+    height: 10px;
+    color: white;
+}
+
+.fasCard {
+    color: #F23030;
+}

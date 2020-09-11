@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/7b4acc7d6f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/profile.css">
+    <title>Profile Iprefer</title>
+</head>
+
+<body>
+
+    <header class="container-fluid">
+
+        <div class="row">
+            <div class="col-4 col-lg-2 py-2 cont-texto text-center">
+                <p class="mt-3">Crepes and waflex</p>
+            </div>
+
+            <div class="col-8 col-lg-10 py-2  cont-logo">
+                <img class="logo" src="../images/logoletras.png" alt="logo-ipref">
+            </div>
+        </div>
+    </header>
+
+    <section class="container-fluid">
+
+        <div class="row  text-center ">
+            <aside class="col-4 col-lg-2  p-0 d-flex flex-column text-center align-items-center">
+                <img src="../images/crepes.png" alt="imagen-crepes">
+                <a href='../pages/dashboard.html'><span><i class="fas fa-home"></i></span>Home</a>
+                <a href='../pages/profile.html'><span><i class="fas fa-user"></i></span>Perfil</a>
+                <a href='../pages/menuResta.html'><span><i class="fas fa-utensils"></i></span>Menu</a>
+            </aside>
+
+            <main class="col-8 col-lg-10 ">
+                <form class=" flex-column tmpmmm">
+                    <div class="form-group d-flex">
+                        <div class="grupo-izquierda d-flex flex-column ">
+                            <label for="">NOMBRE</label>
+                            <input type="text">
+                            <label for="">DIRECCIÓN</label>
+                            <input type="text">
+                            <label for="">NIT</label>
+                            <input type="text">
+                        </div>
+                        <div class="grupo-derecha d-flex flex-column ">
+                            <label for="">IMAGEN</label>
+                            <div class="cont-imagen">
+                                <img src="https://i.pinimg.com/736x/82/1b/20/821b2045339950bb0d38421d30faa2f3.jpg"
+                                    alt="foto-perfil" id="imgp">
+                                <input type="file" id="input-foto" onChange="mostrarImagen(this)">
+                            </div>
+                            <label for="">TELEFONO</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="form-group2">
+                        <label>CORREO</label>
+                        <input type="text">
+
+                        <div class="d-flex sub-grupo">
+                            <div class="sub1">
+                                <label>DEPARTAMENTO</label>
+
+                                <input type="text">
+                            </div>
+                            <div class="sub2">
+                                <label>CIUDAD</label>
+                                <input type="text">
+                            </div>
+                        </div>
+
+                        <div class="d-flex sub-grupo">
+                            <div class="sub1">
+                                <label>ZONA</label>
+
+                                <input type="text">
+                            </div>
+                            <div class="sub2">
+                                <label>TIPO DE COMIDA</label>
+                                <input type="text">
+                            </div>
+
+                        </div>
+                        <div class="d-flex last-group">
+                            <div class="sub3 d-flex">
+                                <label>AFORO</label>
+                                <input type="text">
+                            </div>
+                            <div class="sub4 d-flex ">
+                                <label >TERRAZA</label>
+                                <input type="checkbox" class="check" >
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-around cont-botones">
+                            <button>EDITAR</button>
+                            <button>GUARDAR</button>
+                        </div>
+
+                </form>
+
+                
+
+               
+
+
+            </main>
+
+
+            
+        </div>
+    </section>
+
+    <script src="../js/perfil.js"></script>
+
+
+</body>
+
+</html>

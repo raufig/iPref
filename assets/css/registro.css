@@ -1,0 +1,390 @@
+
+:root {
+    /*Letras*/
+    --claro: #D1D1B4;
+    /*Color Registro transparente - tomado del claro*/
+    --transparente: #d1d1b477;
+    /* Transparencia de los inputs*/
+    --inputBackColor: #d1d1b4c4;
+    /* Fondo */
+    --oscuro: #76BD1D;
+    /* Logo */
+    --primario: #F3CC30;
+    /* Botones */
+    --secundario: #F3CC30;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+    background-color: var(--oscuro);
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+/* Clases del menú */
+
+
+nav>div>a {
+    color: var(--claro);
+    cursor: pointer;
+}
+
+nav>div>a:hover {
+    color: var(--primario);
+}
+
+nav>div>ul>li>a {
+    color: var(--claro);
+    font-size: 18px;
+}
+
+nav>div>ul>li>a:hover {
+    color: var(--secundario);
+}
+
+/* Final de las clases del menú */
+
+/* Modificación de una clase de bootstrap - clase "fade" de bootstrap*/
+.fade {
+    transition: all 0.5s ease-in;
+}
+
+h2 {
+
+    text-align: center;
+}
+
+.main-registro {
+    width: 65%;
+    background-image: url('./../images/igor-miske-bsMFZ1957Zg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50% 0px 0px 0px;
+    height: 65.9vh; 
+    margin-left: auto;
+}
+
+.logoBlanco{
+    /* margin-top: 100px; */
+    width: 450px;
+    
+}
+
+
+
+input {
+    margin: 5px;
+    max-width: 100%;
+    background-color: var(--inputBackColor) !important;
+}
+
+input:hover {
+    border: 5px var(--secundario);
+}
+
+h6 {
+    margin: 30px auto;
+    text-align: center;
+}
+
+div>i:hover {
+    color: var(--primario);
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 900px) {
+    .formulario {
+        background-color: var(--transparente);
+        border-radius: 10px;
+        width: 80%;
+        margin: 50px 0px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .main-registro {
+        width: 80%;
+
+    }
+
+    .form {
+        margin: 10px 40px 10px 40px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-center;
+        /* align-items: stretch; */
+        /* max-width: 100%; */
+
+
+    }
+
+    span {
+        width: 20%;
+    }
+
+    span>img {
+        width: 100%;
+    }
+
+    .main-registro {
+        border-radius: 50% 0px 10px 10px !important;
+        width: 80%;
+        max-width: 100%;
+    }
+
+
+
+    /* .form {
+        margin: 10px;
+    }
+
+    .margin-Formulario {
+        margin: 20px 10px;
+    } */
+    .formulario {
+        background-color: var(--transparente);
+        border-radius: 10px;
+        width: 95%;
+        margin: 20px 0px;
+        padding-right: 0px !important;
+    }
+
+}
+
+
+
+=======
+:root {
+    /*Letras*/
+    --claro: #ffffff;
+    /*Color Registro transparente - tomado del claro*/
+    --transparente: #d1d1b49a;
+    /* Transparencia de los inputs*/
+    --inputBackColor: #d1d1b4c4;
+    /* Fondo */
+    --oscuro: #76bd1d;
+    /* Logo */
+    --primario: #f3cc30;
+    /* Botones */
+    --secundario: #f3cc30;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--oscuro);
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Clases del menú */
+
+nav>div>a {
+    color: var(--claro);
+    cursor: pointer;
+}
+
+nav>div>a:hover {
+    color: var(--primario);
+}
+
+nav>div>ul>li>a {
+    color: var(--claro);
+}
+
+nav>div>ul>li>a:hover {
+    color: var(--secundario);
+}
+
+/* Final de las clases del menú */
+/* Clases del aside */
+
+
+.iniciarSesion {
+    width: 200px;
+    margin-right: 20px;
+}
+
+/* Final de las clases del aside */
+/* Modificación de una clase de bootstrap - clase "fade" de bootstrap*/
+.fade {
+    transition: all 0.5s ease-in;
+}
+
+h2 {
+    text-align: center;
+}
+
+.main-registro {
+    width: 75%;
+    background-image: url("./../images/igor-miske-bsMFZ1957Zg-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50% 0px 0px 0px;
+}
+
+input {
+    margin: 5px;
+    max-width: 100%;
+    background-color: var(--inputBackColor) !important;
+}
+
+input:hover {
+    border: 5px var(--secundario);
+}
+
+h6 {
+    margin: 30px auto;
+    text-align: center;
+}
+
+div>i:hover {
+    color: var(--primario);
+    cursor: pointer;
+}
+
+div .modal-dialog {
+    width: 95%;
+    max-width: 350px;
+}
+
+@media only screen and (min-width: 900px) {
+    nav>div>ul>li {
+        border: solid 1px var(--claro);
+        padding: 3px 20px;
+    }
+
+    nav>div>ul>li>a {
+        font-size: 20px;
+    }
+
+    aside {
+
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        /* align-items: stretch; */
+        /* max-width: 100%; */
+    }
+
+    .formulario {
+        background-color: var(--transparente);
+        border-radius: 10px;
+        width: 100%;
+        margin: 50px 0px;
+    }
+
+    span {
+        width: 30%;
+    }
+
+    span>img {
+        width: 100%;
+    }
+
+    .main-registro {
+        border-radius: 50% 0px 0px 0px !important;
+        width: 70%;
+        max-width: 100%;
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    nav {
+        margin-top: 30px;
+    }
+
+    nav>div>ul>li {
+        border: solid 1px var(--claro);
+        padding: 3px 20px;
+    }
+
+    nav>div>ul>li>a {
+        font-size: 16px;
+    }
+
+    aside {
+
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        /* align-items: stretch; */
+        /* max-width: 100%; */
+    }
+
+    span {
+        width: 30%;
+    }
+
+    span>img {
+        width: 100%;
+    }
+
+    .main-registro {
+        border-radius: 50% 0px 0px 0px !important;
+        width: 70%;
+        max-width: 100%;
+        height: 50vh;
+    }
+
+    .formulario {
+        background-color: var(--transparente);
+        border-radius: 10px;
+        width: 100%;
+        margin: 20px 0px;
+        padding-right: 0px;
+
+        /* position: fixed; */
+    }
+
+    /* .form {
+        margin: 10px;
+    }
+
+    .margin-Formulario {
+        margin: 20px 10px;
+    } */
+}
+
+
+/* Final de las clases del main */

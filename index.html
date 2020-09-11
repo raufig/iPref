@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <!-- Bootstrap fin del link -->
+
+    <!-- Link de fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <!-- Fin del link de fontawesome -->
+    <link rel="stylesheet" href="./assets/css/registro.css" />
+    <title>Registro</title>
+</head>
+
+<body id="body">
+    <nav class="navbar d-flex justify-content-between align-items-center " id="menu">
+        <div class="">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logowhite.png" width="70px" max-width="100%" alt="" />
+            </a>
+        </div>
+        <div class="" id="">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 flex-row">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item ml-3">
+                    <a type="button" class="nav-link" data-toggle="modal" data-target="#exampleModal" id="registro">
+                        Registro
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <aside>
+
+        <div class="iniciarSesion">
+            <form class="d-flex justify-content-center flex-column">
+
+                <div class="form-group">
+
+                    <input type="email" class="form-control" id="email" placeholder="Email" />
+                    <input type="password" class="form-control" id="password" placeholder="Password" />
+                </div>
+
+                <button class="btn btn-warning mx-auto px-4 mt-3">
+                    Iniciar Sesión
+                </button>
+
+            </form>
+        </div>
+
+    </aside>
+    <main class=" ml-3">
+
+        <span class="">
+            <img src="./assets/images/logoLetraswhite.png" alt="Logo-letras-white">
+            <div>texto</div>
+        </span>
+
+
+
+        <div class=" main-registro d-flex justify-content-end " id="imagenMain">
+
+
+        </div>
+    </main>
+    <!-- Modal Registro -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content formulario">
+                <div class="modal-header ">
+                    <h5 class="modal-title" id="exampleModalLabel">Registrate</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="d-flex justify-content-center flex-column">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre" />
+                            <input type="text" class="form-control" id="apellido" placeholder="apellido" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="direccion" placeholder="Dirección">
+                            <input type="email" class="form-control" id="email" placeholder="Email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" placeholder="Password" />
+                        </div>
+
+                        <div class="form-group d-flex justify-content-center align-items-center" width=90%>
+                            <label for="inputState" class="mx-2">Sexo</label>
+                            <select id="inputState" class="form-control "
+                                style="background-color:var(--inputBackColor);">
+                                <option selected>Escoge...</option>
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-warning mx-auto px-4 mt-3">
+                            Registrar
+                        </button>
+                        <div>
+                            <h6>También registrarte por:<h6>
+                                    <div class="d-flex justify-content-center">
+                                        <i class="fab fa-facebook-f mr-3"></i>
+                                        <i class="fas fa-envelope ml-3"></i>
+                                    </div>
+                                    <div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin del Modal Registro -->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+
+    <!-- Estilos de registro js -->
+    <script src="./assets/js/registro.js"></script>
+</body>
+
+</html>
