@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/indexLogin.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="assets/images/logoLetraswhite.png" alt="logo-ipref">
+        <a href='#miModal'><button>Ingresar</button></a>
+    </header>
+
+    <main>
+        <div class="texto">
+
+        </div>
+        <form action="#" id="formulario">
+            <div class="texto-registrar">
+                <p>Regístrate</p><span>x</span>
+            </div>
+            <p id="error">Todos los campos son obligatorios <i class="fas fa-exclamation-triangle"></i></p>
+            <p id="errorContra"><i class="fas fa-exclamation-circle"></i>Las contraseñas NO coinciden <i class="fas fa-exclamation-circle"></i></p>
+            <div class="form-group g1">
+                <label id="nit">NIT</label>
+                <input type="text" id="init" onClick="subir('nit')" onBlur="bajar('nit','init','iconit')">
+                <i class="fas fa-address-card" id="iconit"></i>
+            </div>
+
+             <div class="form-group">
+                <label id="nombre">Nombre</label>
+                <input type="text" id="inombre" onClick="subir('nombre')" onBlur="bajar('nombre','inombre','iconombre')">
+                <i class="fas fa-user" id="iconombre"></i>
+            </div> 
+
+            <div class="form-group">
+                <label id="apellido">Apellido</label>
+                <input type="text" id="iapellido" onClick="subir('apellido')" onBlur="bajar('apellido','iapellido','icoapellido')">
+                <i class="fas fa-user" id="icoapellido"></i>
+            </div>
+            <div class="form-group">
+                <label id="direccion">Dirección</label>
+                <input type="text" id="idireccion" onClick="subir('direccion')" onBlur="bajar('direccion','idireccion','icodireccion')">
+                <i class="fas fa-map-signs" id="icodireccion"></i>
+            </div>
+            <div class="form-group">
+                <label id="email">Email</label>
+                <input type="email" id="iemail" onClick="subir('email')" onBlur="bajar('email','iemail','icoemail')">
+                <i class="fas fa-envelope" id="icoemail"></i>  
+            </div>
+            <div class="form-group">
+                <label id="contraseña">Contraseña</label>
+                <input type="password" id="icontraseña" onClick="subir('contraseña')" onBlur="bajar('contraseña','icontraseña','iconocontraseña')">
+                <i class="fas fa-key" id="iconocontraseña"></i>
+            </div>
+
+            <div class="form-group">
+                <label id="contraseña2">Repetir contraseña</label>
+                <input type="password" id="icontraseña2" onClick="subir('contraseña2')" onBlur="bajar('contraseña2','icontraseña2','iconosubir')">
+                <i class="fas fa-unlock" id="iconosubir"></i>
+            </div>
+
+            <div class="form-group">
+                <select name="select" id="select-sexo" onChange="selectg('select-sexo','int','hom','muj')">
+                    <option value="" >Selecciona tu sexo</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                </select>
+                <i class="fas fa-question" id="int" ></i>
+                <i class="fas fa-male" id="hom" style="font-size: 25px;"></i> 
+                <i class="fas fa-female" id="muj" style="font-size: 25px;"></i> 
+            </div>
+
+
+
+            <button>Registrar</button>
+
+            <div class="sk-chase" id="spinner">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+              </div>
+
+              <p id="exito">Te has registrado con exito en ipref <i class="fas fa-thumbs-up"></i></p>
+
+            <div class="opciones-alternas">
+                <small>También registrate por:</small>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fas fa-envelope"></i> 
+            </div>
+            
+
+
+        </form>
+    </main>
+
+    <div id="miModal" class="modal">
+      <div class="modal-contenido">
+        <form  class='modal-form' id="loginf" action="#">
+            <h4>Iniciar Sesión <a href="#" id='cerrarLogin'>X</a> </h4>
+            <small id="error-modal">Todos los campos son obligatorios<i class="fas fa-exclamation-triangle"></i></small>
+            <small id="error-datos"><i class="fas fa-exclamation-triangle"></i> Datos incorrectos <i class="fas fa-exclamation-triangle"></i></small>
+
+                <input type="text" placeholder="usuario" id="userlogin">
+                <input type="password" placeholder="contraseña" id="contralogin">
+                
+                <button>Ingresar</button>
+        </form>
+
+      </div>  
+    </div> 
+
+<script src="assets/js/indexLogin.js"></script>
+
+</body>
+
+</html>

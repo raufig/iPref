@@ -7,9 +7,92 @@ body{
     background: #76bd1d;
     font-family: 'Roboto';
 }
+
+/* -----------------------------------------NAV----------------------------- */
+.cont-iconolog{
+    position: relative;
+    left: 40px;
+    top: 20px;
+ 
+}
+.cont-iconolog:hover~nav{
+  display: block;
+ 
+}
+.cont-iconolog i:hover ~nav{
+  display: block;
+
+}
+.cont-iconolog i{
+    font-size: 50px;
+    color: #fff;
+}
+.menu-log{
+    background: #f2f2f2;
+    position: relative;
+    top: 60px;
+    left: 38px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    cursor: pointer;
+}
+.menu-log:hover{
+
+}
+.menu-log small{
+    display: block;
+    color:#fff;
+    cursor: pointer;
+    font-size: 11px;
+    background:#171426;
+  
+    text-align: center;
+    padding: 10px 0;
+}
+.menu-log a{
+    display: block;
+    margin:15px 25px;
+    color:rgba(0, 0, 0, .6);
+    cursor: pointer;
+    font-size: 14px;
+  
+}
+.menu-log p{
+    font-size: 14px;
+    background: #fff;
+    margin-bottom: 0;
+    padding: 12px;
+    text-align: center;
+    color: #76bd1d;
+    border-radius: 4px;
+}
+.menu-log p i{ 
+    margin-right: 12px;
+}
+.menu-log a:hover{
+    text-decoration: none;
+
+}
+#cerrars{
+    margin: 0;
+    border-top: 1px solid rgba(0, 0, 0, .6);
+    left: 65px;
+    padding-top: 6px;
+    padding-left: 26px;
+    padding-bottom: 6px;
+
+}
+
+
+
+
+/* -------------------------------------MAIN----------------------------- */
 main .cont-logo-page-user{
   text-align: end;
-  padding: 40px 120px;
+  padding: 5px 120px;
+  position: relative;
+  bottom: 80px;
  
 }
  main .logo-page-user{
@@ -17,7 +100,7 @@ main .cont-logo-page-user{
     
 }
 main .cont-input-user{
-    margin-top: 70px;
+   
     padding-left: 300px;
     position: relative;
     margin-bottom: 50px;
@@ -184,7 +267,7 @@ main .titulo-cerca{
         padding: 20px 120px;
       }
       main .logo-page-user{
-        widows: 90px;
+        width: 90px;
     }
     .titulo-sugerencias{
         font-size: 3px;
@@ -227,7 +310,7 @@ main .titulo-cerca{
         margin-left: 6px;
     }
     main .logo-page-user{
-        width:60px;
+        width:90px;
     }
     main .cont-input-user{
         margin-top: 50px;
